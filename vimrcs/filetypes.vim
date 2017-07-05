@@ -28,9 +28,10 @@ au FileType python set indentkeys-=0#
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+au FileType javascript setl nofoldenable
+au FileType javascript setl ts=2 sts=2 sw=2
 
-au FileType javascript imap <c-t> $log();<esc>hi
-au FileType javascript imap <c-a> alert();<esc>hi
+au FileType javascript imap <c-t> console.log();<esc>hi
 
 au FileType javascript inoremap <buffer> $r return 
 au FileType javascript inoremap <buffer> $f //--- PH<esc>FP2xi
